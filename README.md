@@ -41,8 +41,8 @@ Find a regular expression that will match a student number.
 `Hint: The numbers are (obviously) different for different students, so finding a regular expression that only matches this one student number is not enough. 
 Unless the way your regular expression works is obvious, please explain how it works.`
 
-**Answer:** Replace this text with your answer.
-
+**Answer:** (G)\B.+ is a regular expression that works for the sequence above, presuming that the first letter will always be G. As long as there is a G any number sequence will come up with this regular expression. 
+If you want to specify it to only being 8 digits long then the regular expression would be G\d{8}. the d is for the digits and the {8} is the number of digits in the sequences. 
 #### Question 2
 
 Sometimes people will write the G as a lower case character or leave out the letter altogether. 
@@ -50,7 +50,7 @@ Find a regular expression that will match a student number, based on the additio
  
 `Hint: Unless the way your regular expression works is obvious, please explain how it works, e.g. this here will match the character and that here makes sure it also works if there is no character in front of the number.`
 
-**Answer:** Replace this text with your answer.
+**Answer:** .\d{7-9} should work whether there is a G, g, or no letter at all. the . represents any number or letter, and then the ending is the same as above.
 
 #### Question 3
 
@@ -59,7 +59,7 @@ Find a regular expression that will match a student number, based on the additio
  
 `Hint: Unless the way your regular expression works is obvious, please explain how it works.`
 
-**Answer:** Replace this text with your answer.
+**Answer:** .\d{7,9}.
 
 #### Question 4a
 
